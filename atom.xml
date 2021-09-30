@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://james-ljf.github.io</id>
     <title>来自猩猩的Blog</title>
-    <updated>2021-09-30T04:13:51.234Z</updated>
+    <updated>2021-09-30T06:45:56.062Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://james-ljf.github.io"/>
     <link rel="self" href="https://james-ljf.github.io/atom.xml"/>
-    <subtitle>在这里，你进入无尽的知识海中。</subtitle>
+    <subtitle>在这里，你将进入无尽的知识海中。</subtitle>
     <logo>https://james-ljf.github.io/images/avatar.png</logo>
     <icon>https://james-ljf.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 来自猩猩的Blog</rights>
