@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://james-ljf.github.io</id>
-    <title>Gridea</title>
-    <updated>2021-09-30T02:52:10.040Z</updated>
+    <title>来自猩猩的Blog</title>
+    <updated>2021-09-30T02:53:35.763Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://james-ljf.github.io"/>
     <link rel="self" href="https://james-ljf.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>来自猩猩的Blog</subtitle>
     <logo>https://james-ljf.github.io/images/avatar.png</logo>
     <icon>https://james-ljf.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
+    <rights>All rights reserved 2021, 来自猩猩的Blog</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://james-ljf.github.io/post/hello-gridea/</id>
