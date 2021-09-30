@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://james-ljf.github.io</id>
     <title>来自猩猩的Blog</title>
-    <updated>2021-09-30T06:45:56.062Z</updated>
+    <updated>2021-09-30T07:45:14.328Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://james-ljf.github.io"/>
     <link rel="self" href="https://james-ljf.github.io/atom.xml"/>
@@ -11,33 +11,75 @@
     <icon>https://james-ljf.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 来自猩猩的Blog</rights>
     <entry>
-        <title type="html"><![CDATA[HashMap基于java8的前世今生]]></title>
+        <title type="html"><![CDATA[JAVA的Future类]]></title>
         <id>https://james-ljf.github.io/post/hello-gridea/</id>
         <link href="https://james-ljf.github.io/post/hello-gridea/">
         </link>
         <updated>2021-09-30T03:54:25.000Z</updated>
-        <summary type="html"><![CDATA[<p>看完这篇HashMap，扯皮不是问题...</p>
+        <summary type="html"><![CDATA[<p>两个字，这个类真香</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>看完这篇HashMap，扯皮不是问题...</p>
+        <content type="html"><![CDATA[<p>两个字，这个类真香</p>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<h2 id="future类应用场景">Future类应用场景👇</h2>
+<p style="text-indent:2em">在并发编程中，我们经常用到非阻塞的模型，在之前的多线程的三种实现中，不管是继承thread类还是实现runnable接口，都无法保证获取到之前的执行结果。通过实现Callback接口，并用Future可以来接收多线程的执行结果。</p>
+<p style="text-indent:2em">Future表示一个可能还没有完成的异步任务的结果，针对这个结果可以添加Callback以便在任务执行成功或失败后作出相应的操作。</p>
+<p style="text-indent:2em">举个例子：比如去吃早点时，点了包子和凉菜，包子需要等3分钟，凉菜只需1分钟，如果是串行的一个执行，在吃上早点的时候需要等待4分钟，但是因为你在等包子的时候，可以同时准备凉菜，所以在准备凉菜的过程中，可以同时准备包子，这样只需要等待3分钟。那Future这种模式就是后面这种执行模式。</p>
+<h2 id="future的类图结构">Future的类图结构</h2>
+<figure data-type="image" tabindex="1"><img src="https://img2018.cnblogs.com/blog/1443992/201809/1443992-20180905145041950-2070107919.png" alt="" loading="lazy"></figure>
+<h4 id="runnablefuture"><strong>RunnableFuture</strong></h4>
+<p>这个接口同时继承Future接口和Runnable接口，在成功执行run（）方法后，可以通过Future访问执行结果。这个接口都实现类是FutureTask,一个可取消的异步计算，这个类提供了Future的基本实现，后面我们的demo也是用这个类实现，它实现了启动和取消一个计算，查询这个计算是否已完成，恢复计算结果。计算的结果只能在计算已经完成的情况下恢复。如果计算没有完成，get方法会阻塞，一旦计算完成，这个计算将不能被重启和取消，除非调用runAndReset方法。</p>
+<p>FutureTask能用来包装一个Callable或Runnable对象，因为它实现了Runnable接口，而且它能被传递到Executor进行执行。为了提供单例类，这个类在创建自定义的工作类时提供了protected构造函数。</p>
+<h4 id="schedualfuture"><strong>SchedualFuture</strong></h4>
+<p>这个接口表示一个延时的行为可以被取消。通常一个安排好的future是定时任务SchedualedExecutorService的结果</p>
+<h4 id="completefuture"><strong>CompleteFuture</strong></h4>
+<p>一个Future类是显示的完成，而且能被用作一个完成等级，通过它的完成触发支持的依赖函数和行为。当两个或多个线程要执行完成或取消操作时，只有一个能够成功。</p>
+<h4 id="forkjointask"><strong>ForkJoinTask</strong></h4>
+<p>基于任务的抽象类，可以通过ForkJoinPool来执行。一个ForkJoinTask是类似于线程实体，但是相对于线程实体是轻量级的。大量的任务和子任务会被ForkJoinPool池中的真实线程挂起来，以某些使用限制为代价。</p>
+<h2 id="future类的主要方法">Future类的主要方法</h2>
+<figure data-type="image" tabindex="2"><img src="https://img2018.cnblogs.com/blog/1443992/201809/1443992-20180905145242934-2118211378.png" alt="" loading="lazy"></figure>
+<h4 id="get方法可以当任务结束后返回一个结果如果调用时工作还没有结束则会阻塞线程直到任务执行完毕"><strong>get（）方法可以当任务结束后返回一个结果，如果调用时，工作还没有结束，则会阻塞线程，直到任务执行完毕</strong></h4>
+<h4 id="getlong-timeouttimeunit-unit做多等待timeout的时间就会返回结果"><strong>get（long timeout,TimeUnit unit）做多等待timeout的时间就会返回结果</strong></h4>
+<h4 id="cancelboolean-mayinterruptifrunning方法取消任务的执行"><strong>cancel（boolean mayInterruptIfRunning）方法，取消任务的执行</strong></h4>
+<p>如果不想执行某个任务了，则可以使用 cancel 方法，会有以下三种情况：</p>
+<p style="text-indent:2em">第一种情况最简单，那就是当任务还没有开始执行时，一旦调用 cancel，这个任务就会被正常取消，未来也不会被执行，那么 cancel 方法返回 true。</p>
+<p style="text-indent:2em">第二种情况也比较简单。如果任务已经完成，或者之前已经被取消过了，那么执行 cancel 方法则代表取消失败，返回 false。因为任务无论是已完成还是已经被取消过了，都不能再被取消了。</p>
+<p style="text-indent:2em">第三种情况比较特殊，就是这个任务正在执行，这个时候执行 cancel 方法是不会直接取消这个任务的，而是会根据我们传入的参数做判断。cancel 方法是必须传入一个参数，该参数叫作 mayInterruptIfRunning，它是什么含义呢？如果传入的参数是 true，执行任务的线程就会收到一个中断的信号，正在执行的任务可能会有一些处理中断的逻辑，进而停止，这个比较好理解。如果传入的是 false 则就代表不中断正在运行的任务，也就是说，本次 cancel 不会有任何效果，同时 cancel 方法会返回 false。</p>
+<p>那么如何选择传入 true 还是 false 呢？</p>
+<p style="text-indent:2em">传入 true 适用的情况是，明确知道这个任务能够处理中断。</p>
+<p style="text-indent:2em">传入 false 适用于什么情况呢？
+- 如果我们明确知道这个线程不能处理中断，那应该传入 false。
+- 我们不知道这个任务是否支持取消（是否能响应中断），因为在大多数情况下代码是多人协作的，对于这个任务是否支持中断，我们不一定有十足的把握，那么在这种情况下也应该传入 false。
+- 如果这个任务一旦开始运行，我们就希望它完全的执行完毕。在这种情况下，也应该传入 false。
+这就是传入 true 和 false 的不同含义和选择方法。</p>
+#### **isDone（）方法判断当前方法是否完成**
+#### **isCancel（）方法判断当前方法是否取消**
+<h2 id="常用示例">常用示例</h2>
+<pre><code>//描述：     演示一个 Future 的使用方法
+public class OneFuture {
+    public static void main(String[] args) {
+        ExecutorService service = Executors.newFixedThreadPool(10);
+        Future&lt;Integer&gt; future = service.submit(new CallableTask());
+        try {
+            System.out.println(future.get());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        service.shutdown();
+    }
+    static class CallableTask implements Callable&lt;Integer&gt; {
+        @Override
+        public Integer call() throws Exception {
+            Thread.sleep(3000);
+            return new Random().nextInt();
+        }
+    }
+}
+</code></pre>
+<h2 id="future类使用的注意点">Future类使用的注意点</h2>
+<p>当 for 循环批量获取 Future 的结果时容易 block，get 方法调用时应使用 timeout 限制。</p>
+<p style="text-indent:2em">假设由于网络原因，第一个任务可能长达 1 分钟都没办法返回结果，那么这个时候，我们的主线程会一直卡着，影响了程序的运行效率。此时我们就可以用 Future 的带超时参数的 get(long timeout, TimeUnit unit) 方法来解决这个问题。这个方法的作用是，如果在限定的时间内没能返回结果的话，那么便会抛出一个 TimeoutException 异常，随后就可以把这个异常捕获住，或者是再往上抛出去，这样就不会一直卡着了。</p>
 ]]></content>
     </entry>
 </feed>
