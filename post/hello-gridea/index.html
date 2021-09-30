@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://james-ljf.github.io/favicon.ico?v=1632987905695">
+<link rel="shortcut icon" href="https://james-ljf.github.io/favicon.ico?v=1632988507326">
 <link rel="stylesheet" href="https://james-ljf.github.io/styles/main.css">
 
 
@@ -37,7 +37,7 @@ Future类应用场景👇
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://james-ljf.github.io">
-        <img src="https://james-ljf.github.io/images/avatar.png?v=1632987905695" class="site-logo">
+        <img src="https://james-ljf.github.io/images/avatar.png?v=1632988507326" class="site-logo">
         <h1 class="site-title">来自猩猩的Blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -106,9 +106,6 @@ Future类应用场景👇
             <h2 class="post-title">JAVA的Future类</h2>
             <div class="post-date">2021-09-30</div>
             
-              <div class="feature-container" style="background-image: url('https://james-ljf.github.io/post-images/hello-gridea.png')">
-              </div>
-            
             <div class="post-content" v-pre>
               <p>两个字，这个类真香</p>
 <!-- more -->
@@ -117,7 +114,7 @@ Future类应用场景👇
 <p style="text-indent:2em">Future表示一个可能还没有完成的异步任务的结果，针对这个结果可以添加Callback以便在任务执行成功或失败后作出相应的操作。</p>
 <p style="text-indent:2em">举个例子：比如去吃早点时，点了包子和凉菜，包子需要等3分钟，凉菜只需1分钟，如果是串行的一个执行，在吃上早点的时候需要等待4分钟，但是因为你在等包子的时候，可以同时准备凉菜，所以在准备凉菜的过程中，可以同时准备包子，这样只需要等待3分钟。那Future这种模式就是后面这种执行模式。</p>
 <h2 id="future的类图结构">Future的类图结构</h2>
-<figure data-type="image" tabindex="1"><img src="https://img2018.cnblogs.com/blog/1443992/201809/1443992-20180905145041950-2070107919.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://img-blog.csdn.net/20180606202542500" alt="" loading="lazy"></figure>
 <h4 id="runnablefuture"><strong>RunnableFuture</strong></h4>
 <p>这个接口同时继承Future接口和Runnable接口，在成功执行run（）方法后，可以通过Future访问执行结果。这个接口都实现类是FutureTask,一个可取消的异步计算，这个类提供了Future的基本实现，后面我们的demo也是用这个类实现，它实现了启动和取消一个计算，查询这个计算是否已完成，恢复计算结果。计算的结果只能在计算已经完成的情况下恢复。如果计算没有完成，get方法会阻塞，一旦计算完成，这个计算将不能被重启和取消，除非调用runAndReset方法。</p>
 <p>FutureTask能用来包装一个Callable或Runnable对象，因为它实现了Runnable接口，而且它能被传递到Executor进行执行。为了提供单例类，这个类在创建自定义的工作类时提供了protected构造函数。</p>
