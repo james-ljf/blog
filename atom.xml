@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://james-ljf.github.io</id>
     <title>来自猩猩的日记本</title>
-    <updated>2021-10-08T09:16:27.457Z</updated>
+    <updated>2021-10-08T09:30:53.532Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://james-ljf.github.io"/>
     <link rel="self" href="https://james-ljf.github.io/atom.xml"/>
@@ -10,6 +10,50 @@
     <logo>https://james-ljf.github.io/images/avatar.png</logo>
     <icon>https://james-ljf.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 来自猩猩的日记本</rights>
+    <entry>
+        <title type="html"><![CDATA[2021.09.16～至今    比心]]></title>
+        <id>https://james-ljf.github.io/post/yupaopao_ljf/</id>
+        <link href="https://james-ljf.github.io/post/yupaopao_ljf/">
+        </link>
+        <updated>2021-10-08T08:23:08.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="第二份实习-上海鱼泡泡比心">第二份实习   上海鱼泡泡（比心）</h2>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="第二份实习-上海鱼泡泡比心">第二份实习   上海鱼泡泡（比心）</h2>
+<!-- more -->
+<h3 id="20210916~20210918">2021.09.16～2021.09.18</h3>
+<p>  根据公司文档给自己电脑装开发环境，看公司代码，学习公司开发流程以及各种工具使用。<br>
+<br /></p>
+<h3 id="20210922~20210924">2021.09.22~2021.09.24</h3>
+<p><strong>第一个任务</strong>：<br>
+  接取马王峰哥的一个服务的改造任务，将该服务改造成多模块----业务模块和供服务调用借口的模块。</p>
+<p><strong>遇到的问题</strong>：<br>
+  1.merge分支时出现了代码冲突，然后在自己下载的最新版IDEA找不到解决代码冲突的窗口。</p>
+<p><strong>解决方案</strong>：<br>
+  1.在同事大佬们的帮助下，在冲突的代码页面右键选择git，根据想做的操作进行选择即可。</p>
+<p><strong>收获</strong>：<br>
+  学习到了公司如何将服务改造成多模块化，如何进行服务间调用，还学会了如何将完成的任务合并到test分支后在cloud平台发布到test环境测试。<br>
+<br /></p>
+<h3 id="20210926~20210930">2021.09.26~2021.09.30</h3>
+<p><strong>第二个任务</strong>：<br>
+  比心app所有品类的推荐列表规则，在吴事原哥的指导下完成对对应规则的陪练大神进行召回，并与杨俊哥进行接口对接。</p>
+<p><strong>遇到的问题</strong>：<br>
+  1.因为刚开始是直接在上次改造完的服务进行代码编写，没有基于master分支进行编写代码，然后在编写完后合并到了uat分支，造成了uat分支代码结构的不对，险些酿成大错-----如果将uat合并到了master，那么会导致master分支代码崩溃。</p>
+<p><strong>解决方案</strong>：<br>
+  1.进入cloud平台对uat分支进行回滚</p>
+<p><strong>收获</strong>：<br>
+  学习到了如何不同条件的数据进行召回，还学习到了Feature类，用于异步获取结果；学习到了如何在cloud平台部署服务。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2021.08.02～2021.09.12 上海摩天轮票务]]></title>
+        <id>https://james-ljf.github.io/post/mtl_0802/</id>
+        <link href="https://james-ljf.github.io/post/mtl_0802/">
+        </link>
+        <updated>2021-10-08T08:09:37.000Z</updated>
+        <content type="html"><![CDATA[<p>第一份实习</p>
+<p style="text-indent:2em">入职第一周，领导就让我在第一周内做一个员工管理系统，从中我也学习到了规范的Restful风格API接口，也了解到entity实体类要区分PO、DTO、BO、VO，还有mapper层应该通过DAO层或Repository层进行调用，层次的划分和分工要明确，DAO层或者Repository层充当的是数据仓库的角色；entity不同实体类的转换可通过创建convert包新建实体类的convert转换器类，在里面写方法进行PO、BO、DTO、VO之间的互相转换。</p>
+<p style="text-indent:2em">从第二周开始，便根据领导的需求，基于springboot+mysql+java selenium做了一个自动化测试平台，用于网站UI测试，在做这个项目时使用上了通过员工管理系统学习到的代码开发规范来进行自动化测试平台的开发，在离职前基本功能已完成。</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[JAVA的Future类]]></title>
         <id>https://james-ljf.github.io/post/hello-gridea/</id>
