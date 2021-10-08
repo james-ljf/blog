@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://james-ljf.github.io</id>
     <title>来自猩猩的日记本</title>
-    <updated>2021-10-08T09:35:12.955Z</updated>
+    <updated>2021-10-08T09:37:10.833Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://james-ljf.github.io"/>
     <link rel="self" href="https://james-ljf.github.io/atom.xml"/>
@@ -45,12 +45,15 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021.08.02～2021.09.12 上海摩天轮票务]]></title>
+        <title type="html"><![CDATA[2021.08.02～2021.09.12 摩天轮票务]]></title>
         <id>https://james-ljf.github.io/post/mtl_0802/</id>
         <link href="https://james-ljf.github.io/post/mtl_0802/">
         </link>
         <updated>2021-10-08T08:09:37.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>第一份实习</strong></p>
+        <summary type="html"><![CDATA[<p><strong>第一份实习  上海摩天轮票务</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>第一份实习  上海摩天轮票务</strong></p>
+<!-- more -->
 <p style="text-indent:2em">入职第一周，领导就让我在第一周内做一个员工管理系统，从中我也学习到了规范的Restful风格API接口，也了解到entity实体类要区分PO、DTO、BO、VO，还有mapper层应该通过DAO层或Repository层进行调用，层次的划分和分工要明确，DAO层或者Repository层充当的是数据仓库的角色；entity不同实体类的转换可通过创建convert包新建实体类的convert转换器类，在里面写方法进行PO、BO、DTO、VO之间的互相转换。</p>
 <p style="text-indent:2em">从第二周开始，便根据领导的需求，基于springboot+mysql+java selenium做了一个自动化测试平台，用于网站UI测试，在做这个项目时使用上了通过员工管理系统学习到的代码开发规范来进行自动化测试平台的开发，在离职前基本功能已完成。</p>]]></content>
     </entry>
