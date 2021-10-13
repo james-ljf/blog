@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.xingdiary.xyz</id>
     <title>来自猩猩的日记本</title>
-    <updated>2021-10-11T06:12:20.814Z</updated>
+    <updated>2021-10-13T08:03:56.850Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.xingdiary.xyz"/>
     <link rel="self" href="https://www.xingdiary.xyz/atom.xml"/>
@@ -10,6 +10,63 @@
     <logo>https://www.xingdiary.xyz/images/avatar.png</logo>
     <icon>https://www.xingdiary.xyz/favicon.ico</icon>
     <rights>All rights reserved 2021, 来自猩猩的日记本</rights>
+    <entry>
+        <title type="html"><![CDATA[毕设---游戏点卡在线销售系统]]></title>
+        <id>https://www.xingdiary.xyz/post/bi-she-you-xi-dian-qia-zai-xian-xiao-shou-xi-tong/</id>
+        <link href="https://www.xingdiary.xyz/post/bi-she-you-xi-dian-qia-zai-xian-xiao-shou-xi-tong/">
+        </link>
+        <updated>2021-10-13T07:24:41.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="技术选型">技术选型：</h2>
+<ul>
+<li>架构：springcloud+springboot</li>
+<li>注册中心：nacos</li>
+<li>配置中心：nacos</li>
+<li>数据库：mysql 8</li>
+<li>缓存：redis</li>
+<li>网关：Gateway</li>
+</ul>
+<h2 id="服务功能与划分">服务功能与划分：</h2>
+<h4 id="用户">用户</h4>
+<ul>
+<li>注册（邮箱注册）</li>
+<li>登陆（token）</li>
+<li>查询、添加、修改、删除个人资料内容</li>
+<li>查询（分页）、添加、删除购物车商品</li>
+<li>购买、取消购买、评价商品</li>
+</ul>
+<h4 id="商品">商品</h4>
+<ul>
+<li>查询（分页）、添加、修改、删除商品</li>
+<li>商品分类查询（分页）【开启线程异步调用】</li>
+<li>商品搜索功能（模糊搜索、分页显示）</li>
+<li>查询、添加、修改、删除商品价格</li>
+<li>查询特价商品列表（分页）</li>
+<li>查询、添加、修改、删除库存</li>
+</ul>
+<h4 id="算法服务">算法服务</h4>
+<ul>
+<li>商品排序规则（特价优先 or 价格升序 or 价格降序 or 高销量优先）</li>
+</ul>
+<h4 id="订单redis">订单（redis）</h4>
+<ul>
+<li>查询（分页）、添加、删除订单信息</li>
+<li>超时订单取消</li>
+</ul>
+<h4 id="商品评价">商品评价</h4>
+<ul>
+<li>查询（分页）、添加、修改、删除商品评价</li>
+</ul>
+<h4 id="后台管理">后台管理</h4>
+<ul>
+<li>管理员登陆</li>
+<li>添加、删除普通管理员（仅开发管理者可操作）</li>
+<li>查询（分页）、添加、修改、删除用户信息 【调用用户服务】</li>
+<li>查询（分页）、添加、修改、删除商品信息 【调用商品服务、库存服务】</li>
+<li>商品的排序规则 【调用算法服务】</li>
+<li>查询（分页）、添加、修改、删除商品评价【调用商品评价服务】</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021.09.16～至今    比心]]></title>
         <id>https://www.xingdiary.xyz/post/yupaopao_ljf/</id>

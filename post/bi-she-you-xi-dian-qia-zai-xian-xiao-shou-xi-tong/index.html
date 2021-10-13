@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>2021.08.02～2021.09.12 摩天轮票务 | 来自猩猩的日记本</title>
+<title>毕设---游戏点卡在线销售系统 | 来自猩猩的日记本</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -24,10 +24,22 @@
 
 
 
-    <meta name="description" content="第一份实习  上海摩天轮票务
+    <meta name="description" content="技术选型：
 
-入职第一周，领导就让我在第一周内做一个员工管理系统，从中我也学习到了规范的Restful风格API接口，也了解到entity实体类要区分PO、DTO、BO、VO，还有mapper层应该通过DAO层或Repos..." />
-    <meta name="keywords" content="实习经历" />
+架构：springcloud+springboot
+注册中心：nacos
+配置中心：nacos
+数据库：mysql 8
+缓存：redis
+网关：Gateway
+
+服务功能与划分：
+用户
+
+注册（邮箱注册）
+登陆（token）
+..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -102,30 +114,68 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">2021.08.02～2021.09.12 摩天轮票务</h2>
-            <div class="post-date">2021-10-08</div>
+            <h2 class="post-title">毕设---游戏点卡在线销售系统</h2>
+            <div class="post-date">2021-10-13</div>
             
             <div class="post-content" v-pre>
-              <p><strong>第一份实习  上海摩天轮票务</strong></p>
-<!-- more -->
-<p style="text-indent:2em">入职第一周，领导就让我在第一周内做一个员工管理系统，从中我也学习到了规范的Restful风格API接口，也了解到entity实体类要区分PO、DTO、BO、VO，还有mapper层应该通过DAO层或Repository层进行调用，层次的划分和分工要明确，DAO层或者Repository层充当的是数据仓库的角色；entity不同实体类的转换可通过创建convert包新建实体类的convert转换器类，在里面写方法进行PO、BO、DTO、VO之间的互相转换。</p>
-<p style="text-indent:2em">从第二周开始，便根据领导的需求，基于springboot+mysql+java selenium做了一个自动化测试平台，用于网站UI测试，在做这个项目时使用上了通过员工管理系统学习到的代码开发规范来进行自动化测试平台的开发，在离职前基本功能已完成。</p>
+              <h2 id="技术选型">技术选型：</h2>
+<ul>
+<li>架构：springcloud+springboot</li>
+<li>注册中心：nacos</li>
+<li>配置中心：nacos</li>
+<li>数据库：mysql 8</li>
+<li>缓存：redis</li>
+<li>网关：Gateway</li>
+</ul>
+<h2 id="服务功能与划分">服务功能与划分：</h2>
+<h4 id="用户">用户</h4>
+<ul>
+<li>注册（邮箱注册）</li>
+<li>登陆（token）</li>
+<li>查询、添加、修改、删除个人资料内容</li>
+<li>查询（分页）、添加、删除购物车商品</li>
+<li>购买、取消购买、评价商品</li>
+</ul>
+<h4 id="商品">商品</h4>
+<ul>
+<li>查询（分页）、添加、修改、删除商品</li>
+<li>商品分类查询（分页）【开启线程异步调用】</li>
+<li>商品搜索功能（模糊搜索、分页显示）</li>
+<li>查询、添加、修改、删除商品价格</li>
+<li>查询特价商品列表（分页）</li>
+<li>查询、添加、修改、删除库存</li>
+</ul>
+<h4 id="算法服务">算法服务</h4>
+<ul>
+<li>商品排序规则（特价优先 or 价格升序 or 价格降序 or 高销量优先）</li>
+</ul>
+<h4 id="订单redis">订单（redis）</h4>
+<ul>
+<li>查询（分页）、添加、删除订单信息</li>
+<li>超时订单取消</li>
+</ul>
+<h4 id="商品评价">商品评价</h4>
+<ul>
+<li>查询（分页）、添加、修改、删除商品评价</li>
+</ul>
+<h4 id="后台管理">后台管理</h4>
+<ul>
+<li>管理员登陆</li>
+<li>添加、删除普通管理员（仅开发管理者可操作）</li>
+<li>查询（分页）、添加、修改、删除用户信息 【调用用户服务】</li>
+<li>查询（分页）、添加、修改、删除商品信息 【调用商品服务、库存服务】</li>
+<li>商品的排序规则 【调用算法服务】</li>
+<li>查询（分页）、添加、修改、删除商品评价【调用商品评价服务】</li>
+</ul>
+
             </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://www.xingdiary.xyz/tag/x3Gk4XEdk/" class="tag">
-                    实习经历
-                  </a>
-                
-              </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://www.xingdiary.xyz/post/hello-gridea/">
+                <a href="https://www.xingdiary.xyz/post/yupaopao_ljf/">
                   <h3 class="post-title">
-                    JAVA的Future类
+                    2021.09.16～至今    比心
                   </h3>
                 </a>
               </div>
