@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.xingdiary.xyz</id>
     <title>来自猩猩的日记本</title>
-    <updated>2021-10-13T08:53:47.896Z</updated>
+    <updated>2021-10-14T07:17:42.090Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.xingdiary.xyz"/>
     <link rel="self" href="https://www.xingdiary.xyz/atom.xml"/>
@@ -77,28 +77,38 @@
 ]]></summary>
         <content type="html"><![CDATA[<p><strong>第二份实习   上海鱼泡泡（比心）</strong></p>
 <!-- more -->
-<h3 id="20210916~20210918">2021.09.16～2021.09.18</h3>
+<h3 id="20210916-~-20210918">2021.09.16 ～ 2021.09.18</h3>
 <p>  根据公司文档给自己电脑装开发环境，看公司代码，学习公司开发流程以及各种工具使用。<br>
 <br /></p>
-<h3 id="20210922~20210924">2021.09.22~2021.09.24</h3>
-<p><strong>第一个任务</strong>：<br>
+<h3 id="20210922-~-20210924">2021.09.22 ～ 2021.09.24</h3>
+<p><strong>任务</strong>：<br>
   接取马王峰哥的一个服务的改造任务，将该服务改造成多模块----业务模块和供服务调用借口的模块。</p>
 <p><strong>遇到的问题</strong>：<br>
   1.merge分支时出现了代码冲突，然后在自己下载的最新版IDEA找不到解决代码冲突的窗口。</p>
 <p><strong>解决方案</strong>：<br>
   1.在同事大佬们的帮助下，在冲突的代码页面右键选择git，根据想做的操作进行选择即可。</p>
 <p><strong>收获</strong>：<br>
-  学习到了公司如何将服务改造成多模块化，如何进行服务间调用，还学会了如何将完成的任务合并到test分支后在cloud平台发布到test环境测试。<br>
+  1.学习到了公司的业务是如何将服务改造成多模块化,如何进行服务间调用<br>
+  2.学会了如何将完成的任务合并到test分支后在cloud平台发布到test环境测试。<br>
 <br /></p>
-<h3 id="20210926~20210930">2021.09.26~2021.09.30</h3>
-<p><strong>第二个任务</strong>：<br>
+<h3 id="20210926-~-20210930">2021.09.26 ～ 2021.09.30</h3>
+<p><strong>任务</strong>：<br>
   比心app所有品类的推荐列表规则，在吴事原哥的指导下完成对对应规则的陪练大神进行召回，并与杨俊哥进行接口对接。</p>
 <p><strong>遇到的问题</strong>：<br>
   1.因为刚开始是直接在上次改造完的服务进行代码编写，没有基于master分支进行编写代码，然后在编写完后合并到了uat分支，造成了uat分支代码结构的不对，险些酿成大错-----如果将uat合并到了master，那么会导致master分支代码崩溃。</p>
 <p><strong>解决方案</strong>：<br>
   1.进入cloud平台对uat分支进行回滚</p>
 <p><strong>收获</strong>：<br>
-  学习到了如何不同条件的数据进行召回，还学习到了Future类，用于异步获取结果；学习到了如何在cloud平台部署服务。</p>
+  1.学习到了如何不同条件的数据进行召回；<br>
+  2.学习到了Future类，用于异步获取结果；<br>
+  3.学习到了如何在cloud平台部署上线服务。</p>
+<h3 id="2021108-~-20211014">2021.10.8 ～ 2021.10.14</h3>
+<p><strong>任务</strong>：<br>
+  优化自己写的代码，并对不同大神的召回线路的type修改为枚举类型，让代码可读性更高；对五路召回的业务代码和调用填坑逻辑进行打点，便于观察接口的处理的时间。</p>
+<p><strong>遇到的问题</strong>：<br>
+  无</p>
+<p><strong>收获</strong>：<br>
+  git本地分支名称应该与关联的远程仓库的分支对应，否则可读性低，容易操作错误。</p>
 ]]></content>
     </entry>
     <entry>
