@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.xingdiary.xyz</id>
     <title>来自猩猩的日记本</title>
-    <updated>2021-10-14T07:17:42.090Z</updated>
+    <updated>2021-10-19T03:26:22.561Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.xingdiary.xyz"/>
     <link rel="self" href="https://www.xingdiary.xyz/atom.xml"/>
@@ -24,6 +24,7 @@
 <li>数据库：mysql 8</li>
 <li>缓存：redis</li>
 <li>网关：Gateway</li>
+<li>服务调用：dubbo</li>
 </ul>
 <h2 id="服务功能与划分">服务功能与划分：</h2>
 <h4 id="用户">用户</h4>
@@ -74,8 +75,30 @@
         </link>
         <updated>2021-10-08T08:23:08.000Z</updated>
         <summary type="html"><![CDATA[<p><strong>第二份实习   上海鱼泡泡（比心）</strong></p>
+<ul>
+<li>[目录]
+<ul>
+<li><a href="#20210916--20210918">2021.09.16 第一周</a></li>
+<li><a href="#20210922--20210924">2021.09.22 第二周</a></li>
+<li><a href="#20210926--20210930">2021.09.26 第三周</a></li>
+<li><a href="#20211008--20211014">2021.10.08 第四周</a></li>
+<li><a href="#20211018--%E5%BE%85%E5%AE%9A">2021.10.18 第五周</a></li>
+</ul>
+</li>
+</ul>
 ]]></summary>
         <content type="html"><![CDATA[<p><strong>第二份实习   上海鱼泡泡（比心）</strong></p>
+<ul>
+<li>[目录]
+<ul>
+<li><a href="#20210916--20210918">2021.09.16 第一周</a></li>
+<li><a href="#20210922--20210924">2021.09.22 第二周</a></li>
+<li><a href="#20210926--20210930">2021.09.26 第三周</a></li>
+<li><a href="#20211008--20211014">2021.10.08 第四周</a></li>
+<li><a href="#20211018--%E5%BE%85%E5%AE%9A">2021.10.18 第五周</a></li>
+</ul>
+</li>
+</ul>
 <!-- more -->
 <h3 id="20210916-~-20210918">2021.09.16 ～ 2021.09.18</h3>
 <p>  根据公司文档给自己电脑装开发环境，看公司代码，学习公司开发流程以及各种工具使用。<br>
@@ -102,13 +125,19 @@
   1.学习到了如何不同条件的数据进行召回；<br>
   2.学习到了Future类，用于异步获取结果；<br>
   3.学习到了如何在cloud平台部署上线服务。</p>
-<h3 id="2021108-~-20211014">2021.10.8 ～ 2021.10.14</h3>
+<h3 id="20211008-~-20211015">2021.10.08 ～ 2021.10.15</h3>
 <p><strong>任务</strong>：<br>
   优化自己写的代码，并对不同大神的召回线路的type修改为枚举类型，让代码可读性更高；对五路召回的业务代码和调用填坑逻辑进行打点，便于观察接口的处理的时间。</p>
 <p><strong>遇到的问题</strong>：<br>
   无</p>
 <p><strong>收获</strong>：<br>
   git本地分支名称应该与关联的远程仓库的分支对应，否则可读性低，容易操作错误。</p>
+<h3 id="20211018-~-待定">2021.10.18 ～ 待定</h3>
+<p><strong>任务</strong>：<br>
+  1.添加新接口，只需要返回大神列表，供内部社区调用</p>
+<p><strong>遇到的问题</strong>：</p>
+<p><strong>解决方案</strong>：</p>
+<p><strong>收获</strong>：</p>
 ]]></content>
     </entry>
     <entry>
