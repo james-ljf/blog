@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.xingdiary.xyz</id>
     <title>来自猩猩的日记本</title>
-    <updated>2021-10-20T07:44:36.933Z</updated>
+    <updated>2021-10-20T09:45:39.202Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.xingdiary.xyz"/>
     <link rel="self" href="https://www.xingdiary.xyz/atom.xml"/>
@@ -16,54 +16,6 @@
         <link href="https://www.xingdiary.xyz/post/bi-she-you-xi-dian-qia-zai-xian-xiao-shou-xi-tong/">
         </link>
         <updated>2021-10-13T07:24:41.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="技术选型">技术选型：</h2>
-<ul>
-<li>架构：springcloud+springboot</li>
-<li>注册中心：nacos</li>
-<li>配置中心：nacos</li>
-<li>数据库：mysql 8</li>
-<li>缓存：redis</li>
-<li>网关：Gateway</li>
-<li>服务调用：dubbo</li>
-</ul>
-<h2 id="服务功能与划分">服务功能与划分：</h2>
-<h4 id="用户">用户</h4>
-<ul>
-<li>注册（邮箱注册）</li>
-<li>登陆（token）</li>
-<li>查询、添加、修改、删除个人资料内容</li>
-<li>查询（分页）、添加、删除购物车商品</li>
-<li>购买、取消购买、评价商品</li>
-</ul>
-<h4 id="商品">商品</h4>
-<ul>
-<li>查询（分页）、添加、修改、删除商品</li>
-<li>商品分类查询（分页）【开启线程异步调用】</li>
-<li>商品搜索功能（模糊搜索、分页显示）</li>
-<li>查询、添加、修改、删除商品价格</li>
-<li>查询特价商品列表（分页）</li>
-<li>查询、添加、修改、删除库存</li>
-<li>查询（分页）、添加、修改、删除商品评价</li>
-</ul>
-<h4 id="算法规则服务">算法规则服务</h4>
-<ul>
-<li>商品排序规则（特价优先 or 价格升序 or 价格降序 or 高销量优先）</li>
-</ul>
-<h4 id="订单redis">订单（redis）</h4>
-<ul>
-<li>查询（分页）、添加、删除订单信息</li>
-<li>超时订单取消</li>
-</ul>
-<h4 id="后台管理">后台管理</h4>
-<ul>
-<li>管理员登陆</li>
-<li>添加、删除普通管理员（仅开发管理者可操作）</li>
-<li>查询（分页）、添加、修改、删除用户信息 【调用用户服务】</li>
-<li>查询（分页）、添加、修改、删除商品信息 【调用商品服务、库存服务】</li>
-<li>商品的排序规则 【调用算法服务】</li>
-<li>查询（分页）、添加、修改、删除商品评价【调用商品评价服务】</li>
-</ul>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[2021.09.16～至今    比心]]></title>
@@ -96,46 +48,6 @@
 </ul>
 </li>
 </ul>
-<!-- more -->
-<h3 id="20210916-~-20210918">2021.09.16 ～ 2021.09.18</h3>
-<p>  根据公司文档给自己电脑装开发环境，看公司代码，学习公司开发流程以及各种工具使用。<br>
-<br /></p>
-<h3 id="20210922-~-20210924">2021.09.22 ～ 2021.09.24</h3>
-<p><strong>任务</strong>：<br>
-  接取马王峰哥的一个服务的改造任务，将该服务改造成多模块----业务模块和供服务调用借口的模块。</p>
-<p><strong>遇到的问题</strong>：<br>
-  1.merge分支时出现了代码冲突，然后在自己下载的最新版IDEA找不到解决代码冲突的窗口。</p>
-<p><strong>解决方案</strong>：<br>
-  1.在同事大佬们的帮助下，在冲突的代码页面右键选择git，根据想做的操作进行选择即可。</p>
-<p><strong>收获</strong>：<br>
-  1.学习到了公司的业务是如何将服务改造成多模块化,如何进行服务间调用<br>
-  2.学会了如何将完成的任务合并到test分支后在cloud平台发布到test环境测试。<br>
-<br /></p>
-<h3 id="20210926-~-20210930">2021.09.26 ～ 2021.09.30</h3>
-<p><strong>任务</strong>：<br>
-  比心app所有品类的推荐列表规则，在吴事原哥的指导下完成对对应规则的陪练大神进行召回，并与杨俊哥进行接口对接。</p>
-<p><strong>遇到的问题</strong>：<br>
-  1.因为刚开始是直接在上次改造完的服务进行代码编写，没有基于master分支进行编写代码，然后在编写完后合并到了uat分支，造成了uat分支代码结构的不对，险些酿成大错-----如果将uat合并到了master，那么会导致master分支代码崩溃。</p>
-<p><strong>解决方案</strong>：<br>
-  1.进入cloud平台对uat分支进行回滚</p>
-<p><strong>收获</strong>：<br>
-  1.学习到了如何不同条件的数据进行召回；<br>
-  2.学习到了Future类，用于异步获取结果；<br>
-  3.学习到了如何在cloud平台部署上线服务。</p>
-<h3 id="20211008-~-20211015">2021.10.08 ～ 2021.10.15</h3>
-<p><strong>任务</strong>：<br>
-  1.优化自己写的代码，并对不同大神的召回线路的type修改为枚举类型，让代码可读性更高；  2.对五路召回的业务代码和调用填坑逻辑进行打点，便于观察业务的处理的时间。<br>
-  3.重新将网关改造发布到test分支交给别人调用接口测试</p>
-<p><strong>遇到的问题</strong>：<br>
-  无</p>
-<p><strong>收获</strong>：<br>
-  git本地分支名称应该与关联的远程仓库的分支对应，否则可读性低，容易操作错误。</p>
-<h3 id="20211018-~-待定">2021.10.18 ～ 待定</h3>
-<p><strong>任务</strong>：<br>
-  1.添加新接口，只需要返回大神列表，供内部社区调用</p>
-<p><strong>遇到的问题</strong>：</p>
-<p><strong>解决方案</strong>：</p>
-<p><strong>收获</strong>：</p>
 ]]></content>
     </entry>
     <entry>
@@ -147,9 +59,7 @@
         <summary type="html"><![CDATA[<p><strong>第一份实习  上海摩天轮票务</strong></p>
 ]]></summary>
         <content type="html"><![CDATA[<p><strong>第一份实习  上海摩天轮票务</strong></p>
-<!-- more -->
-<p style="text-indent:2em">入职第一周，领导就让我在第一周内做一个员工管理系统，从中我也学习到了规范的Restful风格API接口，也了解到entity实体类要区分PO、DTO、BO、VO，还有mapper层应该通过DAO层或Repository层进行调用，层次的划分和分工要明确，DAO层或者Repository层充当的是数据仓库的角色；entity不同实体类的转换可通过创建convert包新建实体类的convert转换器类，在里面写方法进行PO、BO、DTO、VO之间的互相转换。</p>
-<p style="text-indent:2em">从第二周开始，便根据领导的需求，基于springboot+mysql+java selenium做了一个自动化测试平台，用于网站UI测试，在做这个项目时使用上了通过员工管理系统学习到的代码开发规范来进行自动化测试平台的开发，在离职前基本功能已完成。</p>]]></content>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[JAVA的Future类]]></title>
@@ -160,67 +70,6 @@
         <summary type="html"><![CDATA[<p>两个字，这个类真香</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>两个字，这个类真香</p>
-<!-- more -->
-<h2 id="future类应用场景">Future类应用场景👇</h2>
-<p style="text-indent:2em">在并发编程中，我们经常用到非阻塞的模型，在之前的多线程的三种实现中，不管是继承thread类还是实现runnable接口，都无法保证获取到之前的执行结果。通过实现Callback接口，并用Future可以来接收多线程的执行结果。</p>
-<p style="text-indent:2em">Future表示一个可能还没有完成的异步任务的结果，针对这个结果可以添加Callback以便在任务执行成功或失败后作出相应的操作。</p>
-<p style="text-indent:2em">举个例子：比如去吃早点时，点了包子和凉菜，包子需要等3分钟，凉菜只需1分钟，如果是串行的一个执行，在吃上早点的时候需要等待4分钟，但是因为你在等包子的时候，可以同时准备凉菜，所以在准备凉菜的过程中，可以同时准备包子，这样只需要等待3分钟。那Future这种模式就是后面这种执行模式。</p>
-<h2 id="future的类图结构">Future的类图结构</h2>
-<figure data-type="image" tabindex="1"><img src="https://www.xingdiary.xyz/post-images/1632988645419.jpg" alt="" loading="lazy"></figure>
-<h4 id="runnablefuture"><strong>RunnableFuture</strong></h4>
-<p>这个接口同时继承Future接口和Runnable接口，在成功执行run（）方法后，可以通过Future访问执行结果。这个接口都实现类是FutureTask,一个可取消的异步计算，这个类提供了Future的基本实现，后面我们的demo也是用这个类实现，它实现了启动和取消一个计算，查询这个计算是否已完成，恢复计算结果。计算的结果只能在计算已经完成的情况下恢复。如果计算没有完成，get方法会阻塞，一旦计算完成，这个计算将不能被重启和取消，除非调用runAndReset方法。</p>
-<p>FutureTask能用来包装一个Callable或Runnable对象，因为它实现了Runnable接口，而且它能被传递到Executor进行执行。为了提供单例类，这个类在创建自定义的工作类时提供了protected构造函数。</p>
-<h4 id="schedualfuture"><strong>SchedualFuture</strong></h4>
-<p>这个接口表示一个延时的行为可以被取消。通常一个安排好的future是定时任务SchedualedExecutorService的结果</p>
-<h4 id="completefuture"><strong>CompleteFuture</strong></h4>
-<p>一个Future类是显示的完成，而且能被用作一个完成等级，通过它的完成触发支持的依赖函数和行为。当两个或多个线程要执行完成或取消操作时，只有一个能够成功。</p>
-<h4 id="forkjointask"><strong>ForkJoinTask</strong></h4>
-<p>基于任务的抽象类，可以通过ForkJoinPool来执行。一个ForkJoinTask是类似于线程实体，但是相对于线程实体是轻量级的。大量的任务和子任务会被ForkJoinPool池中的真实线程挂起来，以某些使用限制为代价。</p>
-<h2 id="future类的主要方法">Future类的主要方法</h2>
-<figure data-type="image" tabindex="2"><img src="https://www.xingdiary.xyz/post-images/1632988658169.jpg" alt="" loading="lazy"></figure>
-<h4 id="get方法可以当任务结束后返回一个结果如果调用时工作还没有结束则会阻塞线程直到任务执行完毕"><strong>get（）方法可以当任务结束后返回一个结果，如果调用时，工作还没有结束，则会阻塞线程，直到任务执行完毕</strong></h4>
-<h4 id="getlong-timeouttimeunit-unit做多等待timeout的时间就会返回结果"><strong>get（long timeout,TimeUnit unit）做多等待timeout的时间就会返回结果</strong></h4>
-<h4 id="cancelboolean-mayinterruptifrunning方法取消任务的执行"><strong>cancel（boolean mayInterruptIfRunning）方法，取消任务的执行</strong></h4>
-<p>如果不想执行某个任务了，则可以使用 cancel 方法，会有以下三种情况：</p>
-<p style="text-indent:2em">第一种情况最简单，那就是当任务还没有开始执行时，一旦调用 cancel，这个任务就会被正常取消，未来也不会被执行，那么 cancel 方法返回 true。</p>
-<p style="text-indent:2em">第二种情况也比较简单。如果任务已经完成，或者之前已经被取消过了，那么执行 cancel 方法则代表取消失败，返回 false。因为任务无论是已完成还是已经被取消过了，都不能再被取消了。</p>
-<p style="text-indent:2em">第三种情况比较特殊，就是这个任务正在执行，这个时候执行 cancel 方法是不会直接取消这个任务的，而是会根据我们传入的参数做判断。cancel 方法是必须传入一个参数，该参数叫作 mayInterruptIfRunning，它是什么含义呢？如果传入的参数是 true，执行任务的线程就会收到一个中断的信号，正在执行的任务可能会有一些处理中断的逻辑，进而停止，这个比较好理解。如果传入的是 false 则就代表不中断正在运行的任务，也就是说，本次 cancel 不会有任何效果，同时 cancel 方法会返回 false。</p>
-<p>那么如何选择传入 true 还是 false 呢？</p>
-<p style="text-indent:2em">传入 true 适用的情况是，明确知道这个任务能够处理中断。</p>
-<p style="text-indent:2em">传入 false 适用于什么情况呢？
-- 如果我们明确知道这个线程不能处理中断，那应该传入 false。
-- 我们不知道这个任务是否支持取消（是否能响应中断），因为在大多数情况下代码是多人协作的，对于这个任务是否支持中断，我们不一定有十足的把握，那么在这种情况下也应该传入 false。
-- 如果这个任务一旦开始运行，我们就希望它完全的执行完毕。在这种情况下，也应该传入 false。
-这就是传入 true 和 false 的不同含义和选择方法。</p>
-#### **isDone（）方法判断当前方法是否完成**
-#### **isCancel（）方法判断当前方法是否取消**
-<h2 id="常用示例">常用示例</h2>
-<pre><code>//描述：     演示一个 Future 的使用方法
-public class OneFuture {
-    public static void main(String[] args) {
-        ExecutorService service = Executors.newFixedThreadPool(10);
-        Future&lt;Integer&gt; future = service.submit(new CallableTask());
-        try {
-            System.out.println(future.get());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
-        service.shutdown();
-    }
-    static class CallableTask implements Callable&lt;Integer&gt; {
-        @Override
-        public Integer call() throws Exception {
-            Thread.sleep(3000);
-            return new Random().nextInt();
-        }
-    }
-}
-</code></pre>
-<h2 id="future类使用的注意点">Future类使用的注意点</h2>
-<p>当 for 循环批量获取 Future 的结果时容易 block，get 方法调用时应使用 timeout 限制。</p>
-<p style="text-indent:2em">假设由于网络原因，第一个任务可能长达 1 分钟都没办法返回结果，那么这个时候，我们的主线程会一直卡着，影响了程序的运行效率。此时我们就可以用 Future 的带超时参数的 get(long timeout, TimeUnit unit) 方法来解决这个问题。这个方法的作用是，如果在限定的时间内没能返回结果的话，那么便会抛出一个 TimeoutException 异常，随后就可以把这个异常捕获住，或者是再往上抛出去，这样就不会一直卡着了。</p>
 ]]></content>
     </entry>
 </feed>
