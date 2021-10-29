@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://www.xingdiary.xyz/favicon.ico?v=1635477589734">
+<link rel="shortcut icon" href="https://www.xingdiary.xyz/favicon.ico?v=1635498760316">
 <link rel="stylesheet" href="https://www.xingdiary.xyz/styles/main.css">
 
 
@@ -48,7 +48,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://www.xingdiary.xyz">
-        <img src="https://www.xingdiary.xyz/images/avatar.png?v=1635477589734" class="site-logo">
+        <img src="https://www.xingdiary.xyz/images/avatar.png?v=1635498760316" class="site-logo">
         <h1 class="site-title">来自猩猩的日记本</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -182,12 +182,13 @@
   3.继续学习react框架；<br>
   4.根据文档装前端开发环境；</p>
 <p><strong>遇到的问题</strong>：<br>
-  1.网关接口调不通</p>
+  1.网关接口调不通，网关返回的result集合为空</p>
 <p><strong>解决方案</strong>：<br>
-  1.协同运维部门找到问题，原因是传参不对，因为前端的参数文档与实际传参存在类型不一致，最终同事使用@JsonProperty注解转换解决。</p>
+  1.协同运维部门找到问题，接口调不通原因是传参不对，因为前端的参数文档与实际传参存在类型不一致，最终同事使用@JsonProperty注解转换解决。result集合为空的原因是返回结果时使用BeanUtils的copy转换集合类无效，最终自定义了集合类bean的转换工具类解决问题。</p>
 <p><strong>收获</strong>：<br>
   1.公司git分支上传的规范流程<br>
-  2.要在可能出问题的地方多打日志。</p>
+  2.要在可能出问题的地方多打日志。<br>
+  3.数据结果的转换要注意是否框架自带的工具类能否转换成自己想要的类型。</p>
 
             </div>
             
