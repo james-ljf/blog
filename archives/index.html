@@ -4,107 +4,95 @@
     <meta charset="utf-8" >
 
 <title>文章归档 | 来自猩猩的日记本</title>
+<meta name="description" content="本秃头程序猿的日记档案">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://www.xingdiary.xyz/favicon.ico?v=1635927282089">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://www.xingdiary.xyz/favicon.ico?v=1635927256616">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://www.xingdiary.xyz/styles/main.css">
 
 
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
-
-    <meta name="description" content="本秃头程序猿的日记档案">
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://www.xingdiary.xyz">
-        <img src="https://www.xingdiary.xyz/images/avatar.png?v=1635927256616" class="site-logo">
-        <h1 class="site-title">来自猩猩的日记本</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
-      
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://www.xingdiary.xyz">来自猩猩的日记本</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
         
-          <a href="/" class="site-nav">
-            首页
-          </a>
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
         
-      
+          <li>
+            
+              <a href="/archives" class="menu">
+                知识库
+              </a>
+            
+          </li>
         
-          <a href="/archives" class="site-nav">
-            知识库
-          </a>
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
         
-      
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
         
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
+      </ul>
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-          <a class="social-link" href="https://github.com/james-ljf" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      本秃头程序猿的日记档案
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/james-ljf?tab=repositories" target="_blank">&nbsp;&nbsp;james-ljf</a> | <a class="rss" href="https://www.xingdiary.xyz/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</nav>
 
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
+    
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
           
 
           <h2 class="archives-title">文章归档</h2>
           <div class="archives-container">
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2021</h2>
+              <h3 class="year" data-aos-delay="500">2021</h3>
               
                 
                   <article class="post">
                     <a href="https://www.xingdiary.xyz/post/bi-she-you-xi-dian-qia-zai-xian-xiao-shou-xi-tong/">
-                      <h2 class="post-title">
+                      <h4 class="post-title">
                         毕设---游戏点卡在线销售系统
-                      </h2>
+                      </h4>
                     </a>
                   </article>
                 
@@ -112,9 +100,9 @@
                 
                   <article class="post">
                     <a href="https://www.xingdiary.xyz/post/yupaopao_ljf/">
-                      <h2 class="post-title">
+                      <h4 class="post-title">
                         2021.09.16～至今    比心
-                      </h2>
+                      </h4>
                     </a>
                   </article>
                 
@@ -122,9 +110,9 @@
                 
                   <article class="post">
                     <a href="https://www.xingdiary.xyz/post/mtl_ljf/">
-                      <h2 class="post-title">
+                      <h4 class="post-title">
                         2021.08.02～2021.09.12 摩天轮票务
-                      </h2>
+                      </h4>
                     </a>
                   </article>
                 
@@ -132,45 +120,111 @@
                 
                   <article class="post">
                     <a href="https://www.xingdiary.xyz/post/hello-gridea/">
-                      <h2 class="post-title">
+                      <h4 class="post-title">
                         JAVA的Future类
-                      </h2>
+                      </h4>
                     </a>
                   </article>
                 
               
             
           </div>
-
-          <div class="pagination-container">
+        </div>
+        <div class="row flex-edges">
   
   
 </div>
 
-        </div>
       </div>
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://www.xingdiary.xyz/images/avatar.png?v=1635927282089" class="no-responsive avatar">
+    <div class="text-muted">本秃头程序猿的日记档案</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://www.xingdiary.xyz/post/bi-she-you-xi-dian-qia-zai-xian-xiao-shou-xi-tong/">毕设---游戏点卡在线销售系统</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.xingdiary.xyz/post/yupaopao_ljf/">2021.09.16～至今    比心</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.xingdiary.xyz/post/mtl_ljf/">2021.08.02～2021.09.12 摩天轮票务</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.xingdiary.xyz/post/hello-gridea/">JAVA的Future类</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.xingdiary.xyz/post/about/">关于</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://www.xingdiary.xyz/tag/x3Gk4XEdk/" class="badge ">
+          实习经历
+        </a>
+      
+        <a href="https://www.xingdiary.xyz/tag/JHh-jhbZ4/" class="badge success">
+          Java
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/james-ljf?tab=repositories" target="_blank">&nbsp;&nbsp;james-ljf</a> | <a class="rss" href="https://www.xingdiary.xyz/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 <script type="application/javascript">
 
 AOS.init();
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+hljs.initHighlightingOnLoad()
 
 </script>
-
-
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
-
 
 
 
