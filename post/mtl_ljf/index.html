@@ -1,13 +1,26 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>2021.08.02～2021.09.12 摩天轮票务 | 来自猩猩的日记本</title>
-<link rel="shortcut icon" href="https://www.xingdiary.xyz/favicon.ico?v=1635927412456">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://www.xingdiary.xyz/favicon.ico?v=1635927450677">
 <link rel="stylesheet" href="https://www.xingdiary.xyz/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="2021.08.02～2021.09.12 摩天轮票务 | 来自猩猩的日记本 - Atom Feed" href="https://www.xingdiary.xyz/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
@@ -15,185 +28,169 @@
 
 入职第一周，领导就让我在第一周内做一个员工管理系统，从中我也学习到了规范的Restful风格API接口，也了解到entity实体类要区分PO、DTO、BO、VO，还有mapper层应该通过DAO层或Repos..." />
     <meta name="keywords" content="实习经历" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://www.xingdiary.xyz">
-  <img class="avatar" src="https://www.xingdiary.xyz/images/avatar.png?v=1635927412456" alt="">
-  </a>
-  <h1 class="site-title">
-    来自猩猩的日记本
-  </h1>
-  <p class="site-description">
-    本秃头程序猿的日记档案
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://www.xingdiary.xyz">
+        <img src="https://www.xingdiary.xyz/images/avatar.png?v=1635927450677" class="site-logo">
+        <h1 class="site-title">来自猩猩的日记本</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            知识库
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          知识库
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
+          <a class="social-link" href="https://github.com/james-ljf" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      本秃头程序猿的日记档案
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/james-ljf?tab=repositories" target="_blank">&nbsp;&nbsp;james-ljf</a> | <a class="rss" href="https://www.xingdiary.xyz/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              2021.08.02～2021.09.12 摩天轮票务
-            </h2>
-            <div class="post-info">
-              <span>
-                2021-10-08
-              </span>
-              <span>
-                1 min read
-              </span>
-              
-                <a href="https://www.xingdiary.xyz/tag/x3Gk4XEdk/" class="post-tag">
-                  # 实习经历
-                </a>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">2021.08.02～2021.09.12 摩天轮票务</h2>
+            <div class="post-date">2021-10-08</div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p><strong>第一份实习  上海摩天轮票务</strong></p>
+            <div class="post-content" v-pre>
+              <p><strong>第一份实习  上海摩天轮票务</strong></p>
 <!-- more -->
 <p style="text-indent:2em">入职第一周，领导就让我在第一周内做一个员工管理系统，从中我也学习到了规范的Restful风格API接口，也了解到entity实体类要区分PO、DTO、BO、VO，还有mapper层应该通过DAO层或Repository层进行调用，层次的划分和分工要明确，DAO层或者Repository层充当的是数据仓库的角色；entity不同实体类的转换可通过创建convert包新建实体类的convert转换器类，在里面写方法进行PO、BO、DTO、VO之间的互相转换。</p>
 <p style="text-indent:2em">从第二周开始，便根据领导的需求，基于springboot+mysql+java selenium做了一个自动化测试平台，用于网站UI测试，在做这个项目时使用上了通过员工管理系统学习到的代码开发规范来进行自动化测试平台的开发，在离职前基本功能已完成。</p>
-              </div>
-              <div class="toc-container">
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://www.xingdiary.xyz/tag/x3Gk4XEdk/" class="tag">
+                    实习经历
+                  </a>
                 
               </div>
-            </div>
-          </article>
-        </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://www.xingdiary.xyz/post/hello-gridea/">
+                  <h3 class="post-title">
+                    JAVA的Future类
+                  </h3>
+                </a>
+              </div>
+            
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://www.xingdiary.xyz/post/hello-gridea/">
-              <h3 class="post-title">
-                JAVA的Future类
-              </h3>
-            </a>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
-        
 
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script>
-
-  var gitalk = new Gitalk({
-    clientID: '0062184e9239af2a521d',
-    clientSecret: '78287bc423cc06915c66315f920f56a5d2c166d4',
-    repo: 'james-ljf.github.io',
-    owner: 'james-ljf',
-    admin: ['james-ljf'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-
-  gitalk.render('gitalk-container')
-
-</script>
-
-          
-
-          
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/james-ljf?tab=repositories" target="_blank">&nbsp;&nbsp;james-ljf</a>
-  <a class="rss" href="https://www.xingdiary.xyz/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
+        </div>
       </div>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
-      hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+      var gitalk = new Gitalk({
+        clientID: '0062184e9239af2a521d',
+        clientSecret: '78287bc423cc06915c66315f920f56a5d2c166d4',
+        repo: 'james-ljf.github.io',
+        owner: 'james-ljf',
+        admin: ['james-ljf'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
-
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
-
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
+      gitalk.render('gitalk-container')
 
     </script>
+  
+
+  
+
+
+
+
   </body>
 </html>
