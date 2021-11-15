@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://www.xingdiary.xyz/favicon.ico?v=1636944139287">
+<link rel="shortcut icon" href="https://www.xingdiary.xyz/favicon.ico?v=1636962281619">
 <link rel="stylesheet" href="https://www.xingdiary.xyz/styles/main.css">
 
 
@@ -45,7 +45,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://www.xingdiary.xyz">
-        <img src="https://www.xingdiary.xyz/images/avatar.png?v=1636944139287" class="site-logo">
+        <img src="https://www.xingdiary.xyz/images/avatar.png?v=1636962281619" class="site-logo">
         <h1 class="site-title">来自猩猩的日记本</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -204,7 +204,22 @@
   1.在获取用户过滤原因的业务多增加一个品类id的查询条件<br>
   2.在查询用户过滤原因的dubbo接口增加根据用户id获取品类列表的方法并编写业务<br>
   3.在node服务增加用户过滤原因的dubbo接口路径并发布test环境<br>
-  4.优化查询用户过滤原因的页面，并发布到test环境</p>
+  4.优化查询用户过滤原因的页面<br>
+  5.学习lucene搜索引擎</p>
+<p><strong>遇到的问题</strong>：<br>
+  1.node服务获取不到dubbo接口路径与方法<br>
+  2.前端页面请求后端404</p>
+<p><strong>解决方案</strong>：<br>
+  1.在Apollo配置中心配置dubbo接口，node服务就能获取到dubbo接口的方法了。<br>
+  2.404原因是参数传的不对，经过前端中台组的大佬帮忙，已解决一个请求参数问题，仍存在一个请求参数不对。</p>
+<p><strong>收获</strong>：<br>
+  1.了解了dubbo接口配置过程<br>
+  2.了解了react脚手架如何获取输入框的值作为参数。</p>
+<h3 id="20211115-~-20211119">2021.11.15 ~ 2021.11.19</h3>
+<p><strong>任务</strong>：<br>
+  1.调研lucene作为搜索引擎是否会比目前大神的es索引查询速度块<br>
+  2.创建springboot项目，完成领导吩咐的lucene项目的五点要求，将一部分大神索引进行测试<br>
+  3.解决前端请求后端的传参问题，并在本周上线该页面</p>
 <p><strong>遇到的问题</strong>：<br>
   1.</p>
 <p><strong>解决方案</strong>：<br>
