@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://james-ljf.github.io/favicon.ico?v=1636962381664">
+<link rel="shortcut icon" href="https://james-ljf.github.io/favicon.ico?v=1637313655135">
 <link rel="stylesheet" href="https://james-ljf.github.io/styles/main.css">
 
 
@@ -45,7 +45,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://james-ljf.github.io">
-        <img src="https://james-ljf.github.io/images/avatar.png?v=1636962381664" class="site-logo">
+        <img src="https://james-ljf.github.io/images/avatar.png?v=1637313655135" class="site-logo">
         <h1 class="site-title">来自猩猩的日记本</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -217,15 +217,18 @@
   2.了解了react脚手架如何获取输入框的值作为参数。</p>
 <h3 id="20211115-~-20211119">2021.11.15 ~ 2021.11.19</h3>
 <p><strong>任务</strong>：<br>
-  1.调研lucene作为搜索引擎是否会比目前大神的es索引查询速度块<br>
+  1.调研lucene作为搜索引擎是否会比目前大神的es索引查询速度快<br>
   2.创建springboot项目，完成领导吩咐的lucene项目的五点要求，将一部分大神索引进行测试<br>
-  3.解决前端请求后端的传参问题，并在本周上线该页面</p>
+  3.解决用户过滤页面前端请求后端的传参问题和结果渲染，并在本周上线该页面</p>
 <p><strong>遇到的问题</strong>：<br>
-  1.</p>
+  1.lucene项目初始化创建索引时报空指针异常<br>
+  2.用户过滤页面前端渲染不出结果</p>
 <p><strong>解决方案</strong>：<br>
-  1.</p>
+  1.lucene创建索引域值不能为空，因此加入三目运算，因为是在测试环境下，数据量少且信息不全面，所以需要在es获取的数据字段值为null时设置默认值。<br>
+  2.渲染不出结果是因为后端接口返回结果与前端的获取结果不符合，因此规范化后端结果返回后，结果能在前端渲染出来。</p>
 <p><strong>收获</strong>：<br>
-  1.</p>
+  1.熟悉了lucene索引的基本使用<br>
+  2.后端结果返回要符合前端规范</p>
 
             </div>
             
