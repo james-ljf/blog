@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://james-ljf.github.io</id>
     <title>来自猩猩的日记本</title>
-    <updated>2021-11-24T02:51:52.915Z</updated>
+    <updated>2021-11-24T02:52:09.644Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://james-ljf.github.io"/>
     <link rel="self" href="https://james-ljf.github.io/atom.xml"/>
@@ -18,7 +18,7 @@
         <updated>2021-10-13T07:24:41.000Z</updated>
     </entry>
     <entry>
-        <title type="html"><![CDATA[2021.09.16～至今    比心]]></title>
+        <title type="html"><![CDATA[2021.09.16～2021.11.24    比心]]></title>
         <id>https://james-ljf.github.io/post/yupaopao_ljf/</id>
         <link href="https://james-ljf.github.io/post/yupaopao_ljf/">
         </link>
